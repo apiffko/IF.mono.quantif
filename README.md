@@ -60,6 +60,9 @@ pip install -r requirements.txt
 
 Note: This project requires [Cellpose](https://github.com/MouseLand/cellpose) to be installed and accessible. Follow instructions on the Cellpose repository for installation.
 
+**5) Load the Segmentation Model**
+
+The custom Cellpose segmentation model can be loaded [here](https://github.com/MouseLand/cellpose) and should be placed in ```"<project path>/models/cellsegmentation"```
 
 ## Usage
 
