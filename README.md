@@ -1,7 +1,7 @@
 # Monocyte Quantification Pipeline
 
 This repository contains the monocyte quantification pipeline accompanying the paper:\
-**Examining Radiation-Induced Upregulation of Amphiregulin**
+**Radiation-Induced Amphiregulin Drives Tumor Metastasis**
 
 ## Introduction
 
@@ -15,6 +15,8 @@ This pipeline is designed to **quantify the density of monocytes** in immunofluo
 2) Running a **logistic regression monocyte classifier** on extracted features (e.g., intensity signatures in the Ly6C channel) to identify monocytes.
 
 3) Estimating the **tissue fraction** automatically from the cytoplasm channel, which helps correct the quantification in partially empty or artifact-heavy images.
+
+  Note: While this pipeline currently uses **Ly6C** to identify monocytes in mouse tissue, you can easily substitute a different staining (and retrain the model if necessary) to target a different cell type of interest. The overall structure remains the same — simply provide the new marker channel in place of Ly6C and update the classifier (a simple logistc regression classifier) if needed.
 
 The result is a **CSV file** listing each imges monocyte count, ratio and density, as well as a **PNG overlay** showing predicted monocytes.
 
@@ -62,7 +64,7 @@ Note: This project requires [Cellpose](https://github.com/MouseLand/cellpose) to
 
 **5) Load the Segmentation Model**
 
-The custom Cellpose segmentation model can be loaded [here](https://github.com/MouseLand/cellpose) and should be placed in ```"<project path>/models/cellsegmentation"```
+The custom Cellpose segmentation model can be loaded [here](https://uchicago.box.com/s/52vvphkzraavxcnxuoto01b7cuq47kim) and should be placed in ```"<project path>/models/cellsegmentation"```
 
 ## Usage
 
