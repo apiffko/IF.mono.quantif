@@ -1,4 +1,5 @@
 # Monocyte Quantification Pipeline
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14982760.svg)](https://doi.org/10.5281/zenodo.14982760)
 
 This repository contains the monocyte quantification pipeline accompanying the paper:\
 **Radiation-Induced Amphiregulin Drives Tumor Metastasis**
